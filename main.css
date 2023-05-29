@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Navigation */
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5d5d5e;
+    height: 5vh;
+    font-size: 18px;
+}
+.nav ul li{
+    display: inline;
+}
+.nav ul li a{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+.nav ul li a:hover{
+    background: #303030;
+    color: #fff;
+}
+/* End Navigation */
+
+/* Home Page */
+/* .home{
+    background: #777;
+} */
+/* End Home Page */
+
+
+
+
+/* Sign-Up page */
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #f00;
+    border-radius: 5px;
+    height: 80vh;
+    width: 35vw;
+    padding: 5%;
+    /* margin: 10%; */
+    box-shadow: 8px 12px 30px #555;
+}
+
+.register .field{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 25vw;
+    padding: 10%;
+}
+
+.register input{
+    padding: 2%;
+    width: 20vw;
+    height: 4vh;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    border-radius: 5px;
+    background: #fbfbfb;
+}
+
+.register button{
+    padding: 5px;
+}
+
+.register legend{
+    font-size: 20px;
+}
+
+
+
+/* End Sign-Up page */
