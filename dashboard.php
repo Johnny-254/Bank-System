@@ -14,16 +14,15 @@ if (session_status() === PHP_SESSION_NONE) {
 </head>
 <body>
     <div class="dash">
-        <h6><?php echo "Welcome ".$_SESSION['username'];?></h6>
         <div class="nav">
             <ul>
                 <li><a href="dashboard.php?id=profile">View Profile</a></li>
-                <li><a href="dashboard.php?id=statenments">View Statement</a></li>
+                <li><a href="dashboard.php?id=statements">View Statement</a></li>
                 <li><a href="dashboard.php?id=loans">Apply for Loans</a></li>
                 <li><a href="dashboard.php?id=logout">Log-out</a></li>
             </ul>
         </div>
-        <h1>Your Personalised dashboard is ready</h1>
+        <h6><?php echo "Welcome ".$_SESSION['username'];?></h6>
     </div>
     <?php
     if (isset($_GET['id'])) {
@@ -32,11 +31,11 @@ if (session_status() === PHP_SESSION_NONE) {
             case 'profile':
                 include_once "profile.php";
                 break;
-            case 'statement':
-                    // include_once "statement.php";
+            case 'statements':
+                    include_once "statements.php";
                 break;
-            case 'loan':
-                    // include_once "loan.php";
+            case 'loans':
+                    include_once "loanApplication.php";
                 break;
                 case 'profile':
                     // include_once "report.php";

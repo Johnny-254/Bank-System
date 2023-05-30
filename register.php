@@ -14,7 +14,7 @@
             <fieldset>
                 <legend>Sign-up</legend>
                 <div class="field">
-                    <div class="">
+                    <div>
                         <label for="username">Username</label>
                         <input type="text" name="username" placeholder="Enter Username">
                     </div>

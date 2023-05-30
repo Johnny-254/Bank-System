@@ -35,7 +35,7 @@
         // echo "You clicked login";
         $username = $_POST['username'];
         $password = $_POST['password'];
-        echo $username. " ". $password;
+        // echo $username. " ". $password;
 
         include_once "database-config.php";
 

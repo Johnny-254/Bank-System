@@ -29,7 +29,7 @@ if (session_status() === PHP_SESSION_NONE) {
                 <th>Username</th>
                 <th>Email</th>
                 <th>Password</th>
-                <th colspan='2'>Action</th>
+                <th>Action</th>
             </tr>";
             include_once "database-config.php";
             $user_logged_in = $_SESSION['username'];
@@ -42,7 +42,6 @@ if (session_status() === PHP_SESSION_NONE) {
                     <td>".$row['email']."</td>
                     <td>".$row['password']. "</td>
                     <td><a href='edit.php?id=$row[id]'><button type='button' class='btn btn-outline-primary'><i class='bi bi-pencil-square'> Edit</Button></i></a></td>
-                    <td><a href='delete.php?id=$row[id]'><button type='button' class='btn btn-outline-danger'><i class='bi bi-person-dash'> Button</button></i></a></td>
                 </tr>";
         echo "</table>";
 ?>

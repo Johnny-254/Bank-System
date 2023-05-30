@@ -20,12 +20,14 @@ $password =$row["password"];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
 <div class="signup-form">
-        <?php include_once "top-nav.php"; ?>
+        <!-- <?php include_once "top-nav.php"; ?> -->
         <form action="edit.php" method="post">
-            <div class="form-input"><input type="number" name="id" value="<?php echo $id; ?>" placeholder="Enter username"></div>
+            <div class="form-input" hidden><input type="number" name="id" value="<?php echo $id; ?>" placeholder="Enter username"></div>
             <div class="form-input"><input type="text" name="username" value="<?php echo $username; ?>" placeholder="Enter username"></div>
             <div class="form-input"><input type="email" name="email" value="<?php echo $email; ?>" placeholder="Enter email"></div>
             <div class="form-input"><input type="password" name="password" value="<?php echo $password; ?>" placeholder="Enter password"></div>
