@@ -15,7 +15,6 @@
             <li><a href="contact.php">Contact</a></li>
             <li><a href="login.php">Log-In</a></li>
             <li><a href="register.php">Sign-Up</a></li>
-            <li><a href="overriding.php">Overriding_Example</a></li>
         </ul>
 </div>
 </body>
